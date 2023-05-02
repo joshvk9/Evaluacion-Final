@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="..//CSS/cuestionario.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="..//Imagenes/493e7394-logo-utc-a-distancia_1000000000000000000028.png"
+        alt="imagen1"
+      />
+      <h1>Evaluación Docente</h1>
+     
+      <nav>
+        <ul>
+          <li><a href="..//HTML/inicio.html">Inicio</a></li>
+          <li><button id="loginBtn">Acceso</button></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="profile">
+          <h2 style="text-align: center;">Perfil del Alumno</h2>
+          <form>
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+            </div>
+            <div class="form-group">
+              <label for="apellido-paterno">Apellido paterno:</label>
+            
+            </div>
+            <div class="form-group">
+              <label for="apellido-materno">Apellido materno:</label>
+             
+            </div>
+            <div class="form-group">
+              <label for="carrera">Carrera:</label>
+             
+            </div>
+            <div class="form-group">
+              <label for="matricula">Número de matrícula:</label>
+           
+            </div>
+          </form>
+      
+          <input type="submit" value="Cerrar sesión" id="logout-btn" />
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="contenedor">
+      <h1>Bienvenid@ a la evaluación</h1>
+      <p>Por favor, conteste con sinceridad las preguntas que se le presenten en la evaluación, ya que esto nos ayudará a mejorar la calidad de nuestros docentes y, por ende, de la educación que brindamos. Lea cuidadosamente cada una de las preguntas y seleccione la opción que mejor describa su opinión.</p>
+    </div>
+    <br>
+    <br>
+    <div class="selectors-container">
+      <div class="select-container">
+        <label for="teacher-select">Profesor:</label>
+        <select id="teacher-select">
+          <option value="">Selecciona a un Maestro</option>
+          <option value="Adriana Alicia Duran Garcia">Adriana Alicia Duran Garcia</option>
+          <option value="Bersain Selvas Diaz">Bersain Selvas Diaz</option>
+          <option value="Jose Jovany Martinez Muñoz">Jose Jovany Martinez Muñoz</option>
+          <option value="Jaime  Minor Gomez">Jaime  Minor Gomez</option>
+          <option value="Erika Maribel Arellano Orozco">Erika Maribel Arellano Orozco</option>
+          <option value="Jose  Zamudio Soriano">Jose  Zamudio Soriano</option>
+        </select>
+      </div>
+      <div class="select-container">
+        <label for="semester-select">Cuatrimestre:</label>
+        <select id="semester-select">
+          <option value="">Selecciona un cuatrimestre</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="3">4</option>
+          <option value="3">5</option>
+          <option value="3">6</option>
+          <option value="3">7</option>
+          <option value="3">8</option>
+          <option value="3">9</option>
+        </select>
+      </div>
+      <div class="select-container">
+        <label for="subject-select">Materia:</label>
+        <select id="subject-select">
+          <option value="">Selecciona una materia</option>
+          <option value="Fundamentos de Matemáticas y Estadística"> Fundamentos de Matemáticas y Estadística</option>
+          <option value="Física I">Física I</option>
+          <option value="Álgebra I">Álgebra I</option>
+          <option value="Comunicación y Redacción Empresarial">Comunicación y Redacción Empresarial</option>
+          <option value="Geometría Analítica">Geometría Analítica</option>
+          <option value="Participación Ciudadana">Participación Ciudadana</option>
+          <option value="Matemáticas Discretas">Matemáticas Discretas</option>
+          <option value="Investigación">Investigación</option>
+          <option value="Análisis de Algoritmos">Análisis de Algoritmos</option>
+          <option value="Economía General">Economía General</option>
+          <option value="Cálculo Integral y Diferencial">Cálculo Integral y Diferencial</option>
+          <option value="Ecuaciones Diferenciales">Ecuaciones Diferenciales</option>
+          <option value="Optativa 4">Optativa 4</option>
+          <option value="Inteligencia Emocional y Resiliencia">Inteligencia Emocional y Resiliencia</option>
+          <option value="Matemáticas avanzadas en la Ingeniería">Matemáticas avanzadas en la Ingeniería</option>
+          <option value="Optativa 5">Optativa 5</option>
+          <option value="Electrónica Analógica">Electrónica Analógica</option>
+          <option value="Liderazgo y Toma de Decisiones">Liderazgo y Toma de Decisiones</option>
+          <option value="Estructura de datos">Estructura de datos</option>
+          <option value="Sistemas operativos">Sistemas operativos</option>
+          <option value="Innovación y Tecnologías de la Información">Innovación y Tecnologías de la Información</option>
+          <option value="Optativa 6">Optativa 6</option>
+          <option value="Base de Datos"> Base de Datos</option>
+          <option value="Ingeniería de Software"> Ingeniería de Software</option>
+          <option value="Arquitectura de Computadoras"> Arquitectura de Computadoras</option>
+          <option value="Ética y Responsabilidad Social">Ética y Responsabilidad Social</option>
+          <option value="Tecnologías y Diseño Web"> Tecnologías y Diseño Web</option>
+          <option value="Redes de Computadoras">Redes de Computadoras</option>
+          <option value="Inteligencia Artificial"> Inteligencia Artificial</option>
+          <option value="Optativa 8">Optativa 8</option>
+          <option value="Seguridad Informática">Seguridad Informática</option>
+          <option value="Desarrollo para Móviles">Desarrollo para Móviles</option>
+          <option value="Minería de Datos">Minería de Datos</option>
+          <option value=" Optativa 9">Optativa 9</option>
+        </select>
+      </div>
+    </div>
+    
+    <div class="result-container">
+      <p>No has seleccionado nada aún.</p>
+    </div>
+  </head>
+ 
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulario de evaluación de docentes</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <h1>Formulario de evaluación de docentes</h1>
+    <form id="evaluacion-form" action="#" method="post">
+      <!-- Pregunta abierta -->
+      <label for="pregunta-abierta">¿Cómo describirías la calidad del material de enseñanza proporcionado por el docente?:</label>
+      <textarea id="pregunta-abierta" name="pregunta-abierta" rows="5" required></textarea>
+  
+      <!-- Opción múltiple -->
+      <label for="opcion-multiple">¿El docente te brinda suficiente ayuda para entender los temas?</label>
+      <select id="opcion-multiple" name="opcion-multiple" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="opcion-1">Siempre</option>
+        <option value="opcion-2">Casi siempre</option>
+        <option value="opcion-3">Nunca </option>
+      </select>
+  <br>
+      <!-- Escala de puntuación -->
+      <fieldset>
+        <legend>¿El docente está dispuesto a responder preguntas y aclarar dudas? </legend>
+        <input type="radio" id="puntuacion-1" name="puntuacion" value="1" required>
+        <label for="puntuacion-1">Siempre</label>
+  
+        <input type="radio" id="puntuacion-2" name="puntuacion" value="2">
+        <label for="puntuacion-2">Casi siempre</label>
+  
+        <input type="radio" id="puntuacion-3" name="puntuacion" value="3">
+        <label for="puntuacion-3">A veces</label>
+  
+        <input type="radio" id="puntuacion-4" name="puntuacion" value="4">
+        <label for="puntuacion-4">Rara vez</label>
+  
+        <input type="radio" id="puntuacion-5" name="puntuacion" value="5">
+        <label for="puntuacion-5">Nunca</label>
+      </fieldset>
+  <br>
+      <!-- Clasificación o ranking -->
+      <label>¿El docente es puntual y cumple con los horarios establecidos?</label>
+      <ul>
+        <li>
+          <input type="radio" id="clasificacion-1" name="clasificacion" value="1" required>
+          <label for="clasificacion-1">Siempre</label>
+        </li>
+        <li>
+          <input type="radio" id="clasificacion-2" name="clasificacion" value="2">
+          <label for="clasificacion-2">A veces</label>
+        </li>
+        <li>
+          <input type="radio" id="clasificacion-3" name="clasificacion" value="3">
+          <label for="clasificacion-3">Nunca</label>
+        </li>
+      </ul>
+  <br>
+      <!-- Semántica diferencial -->
+      <label></label>
+      <table>
+        <thead>
+          <tr>
+            <th></th>
+            <th>Siempre</th>
+            <th>A veces
+            </th>
+            <th>Nunca</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><label for="sd-1">¿El docente utiliza métodos de enseñanza creativos y efectivos?</label></td>
+            <td><input type="radio" id="sd-1-bajo" name="sd-1" value="bajo" required></td>
+            <td><input type="radio" id="sd-1-medio" name="sd-1" value="medio"></td>
+            <td><input type="radio" id="sd-1-alto" name="sd-1" value="alto"></td>
+          </tr>
+          <tr>
+            <td><label for="sd-2">¿El docente motiva y alienta la participación de los estudiantes?</label></td>
+            <td><input type="radio" id="sd-2-bajo" name="sd-2" value="bajo" required></td>
+            <td><input type="radio" id="sd-2-medio" name="sd-2" value="medio"></td>
+            <td><input type="radio" id="sd-2-alto" name="sd-2" value="alto"></td>
+          </tr>
+          <tr>
+            <td><label for="sd-3">¿El docente brinda retroalimentación y corrección a las tareas y trabajos realizados?</label></td>
+            <td><input type="radio" id="sd-3-bajo" name="sd-3" value="bajo" required></td>
+            <td><input type="radio" id="sd-3-medio" name="sd-3" value="medio"></td>
+            <td><input type="radio" id="sd-3-alto" name="sd-3" value="alto"></td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <!-- Preguntas dicotómicas -->
+        <label>¿El docente fomenta la discusión y el debate en clase?</label>
+        <ul>
+          <li>
+            <input type="radio" id="pregunta-dicotomica-1" name="pregunta-dicotomica-1" value="si" required>
+            <label for="pregunta-dicotomica-1">Siempre
+            </label>
+          </li>
+          <li>
+            <input type="radio" id="pregunta-dicotomica-2" name="pregunta-dicotomica-1" value="no">
+            <label for="pregunta-dicotomica-2">Nunca</label>
+          </li>
+        </ul>
+    
+      <!-- Preguntas cerradas -->
+      <label>¿Recomendarías a este docente a otros estudiantes?</label>
+      <ul>
+        <li>
+          <input type="checkbox" id="pregunta-cerrada-1" name="pregunta-cerrada-1" value="opcion-1" required>
+          <label for="pregunta-cerrada-1">Definitivamente sí
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="pregunta-cerrada-2" name="pregunta-cerrada-2" value="opcion-2">
+          <label for="pregunta-cerrada-2">ONo estoy seguro
+          </label>
+        </li>
+        <li>
+          <input type="checkbox" id="pregunta-cerrada-3" name="pregunta-cerrada-3" value="opcion-3">
+          <label for="pregunta-cerrada-3">Definitivamente no</label>
+        </li>
+      </ul>
+    
+      <!-- Botón de enviar -->
+      <button type="submit">Enviar</button>
+    
+      <!-- Mens
+    
+aje de enviado -->
+<div id="enviado" style="display:none;">
+  <p>Tu respuesta ha sido enviada. ¡Gracias por tu participación!</p>
+</div>
+  </form>
+    <footer>
+      <p>© 2023 Utc Evaluacion Docente</p>
+    </footer>
+    <script src="..//JS/cuestionario02.js"></script>
+    <script src="..//JS/Cuestionario.js"></script>
+  </body>
+</html>

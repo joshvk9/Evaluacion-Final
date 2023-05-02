@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Alumnos</title>
+    <link rel="stylesheet" type="text/css" href="..//CSS/Alumno.css">
+  </head>
+  <body>
+    <header>
+        <img src="..//Imagenes/493e7394-logo-utc-a-distancia_1000000000000000000028.png" alt="imagen1">
+        <h1>Evaluación Docente</h1>
+  
+        <nav>
+          <ul>
+            <li><a href="..//HTML/inicio.html">Inicio</a></li>
+            <li><button id="loginBtn">Perfil</button></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- Ventana modal -->
+      <div id="loginModal" class="modal">
+        <!-- Contenido de la ventana modal -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2 style="text-align: center;">Perfil Administrador </h2>
+            <div class="perfil">
+              <div class="perfil-administrador">
+                <h2>Perfil del administrador</h2>
+                <p><strong>Nombre:</strong> Jaime  </p>
+                <p><strong>Apellido:</strong>Minor Gomez</p>
+                <p><strong>Matrícula:</strong> ADM001</p>
+              </div>
+             
+          <input type="submit" value="Cerrar sesión" id="logout-btn" />
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div style="text-align: center;" id="Menu2 " class="Menu2">
+        <nav>
+            <ul>
+              <li><a href="./Administrador-Jefe de Carrera.html">Inicio</a></li>
+              <li><a href="/HTML/Editor.html">Encuesta</a></li>
+              <li><a href="/HTML/Docente.html">Docente </a></li>
+              <li><a href="/HTML/Alumno.html">Alumno</a></li>
+            </ul>
+          </nav>
+    </div>
+    <table id="tabla-alumnos">
+      <thead>
+        <tr>
+          <th>Alumno</th>
+          <th>Cuatrimestre</th>
+          <th>Maestro</th>
+          <th>Materia</th>
+          <th>¿Contestó?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joshua Juárez Morales </td>
+          <td>8</td>
+          <td>Jaime  Minor Gomez</td>
+          <td>Pagina Web </td>
+          <td><button onclick="marcarContestado(this)">No</button></td>
+        </tr>
+        <tr>
+          <td>Valencia García Diego Armando</td>
+          <td>7</td>
+          <td>Jaime  Minor Gomez</td>
+          <td>Base de Datos</td>
+          <td><button onclick="marcarContestado(this)">Sí</button></td>
+        </tr>
+        <tr>
+          <td>Mancilla Hernández Enrique</td>
+          <td>9</td>
+          <td>Jaime  Minor Gomez</td>
+          <td>Aplicasiones</td>
+          <td><button onclick="marcarContestado(this)">No</button></td>
+        </tr>
+      </tbody>
+    </table>
+    
+<footer>
+      <p>© 2023 Utc Evaluacion Docente </p>
+    </footer>
+
+    <script src="..//JS/inicio.js"></script>
+    <script src="..//Js/Alumnos.js"></script>
+    
+
+  </body>
+</html>
